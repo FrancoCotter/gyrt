@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<title>国韵如天四大产品系列品鉴——百年木作技艺，传承国韵如天</title>
+<link href="css/lib_m.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/jquery.fullpage.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.fullpage.js"></script>
+<script>
+	$(function(){
+		$("#wrapper").fullpage(
+			{
+				onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
+					if(nextSlideIndex==4&&direction=="right"){
+						return false;
+					}
+				}
+			});
+	})
+</script>
+</head>
+<body>
+<div class="dn"><img src="images/share_thumb.jpg" width="310" height="310"></div>
+<!-- 横屏提示 -->
+<div class="hint_bg">
+    <div class="hint"></div>
+</div>
+<!-- 以上横屏提示 -->
+                
+<div id="wrapper" class="section" style="overflow:hidden;">
+	<a href="contact.html" class="contact"></a>
+
+	<div id="page1" class="page slide">  
+	
+		<div class="hand"></div>
+		
+		<!---------- toppart ---------->
+		<div class="toppart">
+			<div class="nav nav_top">
+				<ul>
+					<li class="nav_list1"><a href="sy_a.html" class="nav_link nav_sy_a"></a></li>
+					<li class="nav_list2"><a href="sy_b.html" class="nav_link nav_sy_b"></a></li>
+					<li class="nav_list3"><a href="sy_c.html" class="nav_link nav_sy_c"></a></li>
+					<li class="nav_list4"><a href="sy_d.html" class="nav_link nav_sy_d"></a></li>
+				</ul>
+			</div>
+		</div>
+		<!---------- toppart end ---------->
+		
+		<!---------- bind ---------->
+		<div class="bind"></div>
+		<!---------- bind end ---------->
+		
+		<!---------- botpart ---------->
+		<div class="botpart">
+			<div class="hometit hometit_sy"></div>
+			<div class="homebg homebg_sy"></div>
+		</div>
+		<!---------- botpart end ---------->
+	</div>
+	
+	<div id="page2" class="page slide">
+		<!---------- toppart ---------->
+		<div class="toppart">
+			<div class="hometit hometit_wf"></div>
+			<div class="homebg homebg_wf"></div>
+		</div>
+		<!---------- toppart end ---------->
+		
+		<!---------- bind ---------->
+		<div class="bind"></div>
+		<!---------- bind end ---------->
+		
+		<!---------- botpart ---------->
+		<div class="botpart">
+			<div class="nav nav_bot">
+				<ul>
+					<li class="nav_list1"><a href="wf_a.html" class="nav_link nav_wf_a"></a></li>
+					<li class="nav_list2"><a href="wf_b.html" class="nav_link nav_wf_b"></a></li>
+					<li class="nav_list3"><a href="wf_c.html" class="nav_link nav_wf_c"></a></li>
+					<li class="nav_list4"><a href="wf_d.html" class="nav_link nav_wf_d"></a></li>
+				</ul>
+			</div>
+		</div>
+		<!---------- botpart end ---------->
+	</div>
+	
+	<div id="page3" class="page slide">
+		<!---------- toppart ---------->
+		<div class="toppart">
+			<div class="nav nav_top">
+				<ul>
+					<li class="nav_list1"><a href="gq_a.html" class="nav_link nav_gq_a"></a></li>
+					<li class="nav_list2"><a href="gq_b.html" class="nav_link nav_gq_b"></a></li>
+					<li class="nav_list3"><a href="gq_c.html" class="nav_link nav_gq_c"></a></li>
+					<li class="nav_list4"><a href="gq_d.html" class="nav_link nav_gq_d"></a></li>
+				</ul>
+			</div>
+		</div>
+		<!---------- toppart end ---------->
+		
+		<!---------- bind ---------->
+		<div class="bind"></div>
+		<!---------- bind end ---------->
+		
+		<!---------- botpart ---------->
+		<div class="botpart">
+			<div class="hometit hometit_gq"></div>
+			<div class="homebg homebg_gq"></div>
+		</div>
+		<!---------- botpart end ---------->
+	</div>
+	
+	<div id="page4" class="page slide">
+		<!---------- toppart ---------->
+		<div class="toppart">
+			<div class="hometit hometit_gy"></div>
+			<div class="homebg homebg_gy"></div>
+		</div>
+		<!---------- toppart end ---------->
+		
+		<!---------- bind ---------->
+		<div class="bind"></div>
+		<!---------- bind end ---------->
+		
+		<!---------- botpart ---------->
+		<div class="botpart">
+			<div class="nav nav_bot">
+				<ul>
+					<li class="nav_list1"><a href="gy_a.html" class="nav_link nav_gy_a"></a></li>
+					<li class="nav_list2"><a href="gy_b.html" class="nav_link nav_gy_b"></a></li>
+					<li class="nav_list3"><a href="gy_c.html" class="nav_link nav_gy_c"></a></li>
+					<li class="nav_list4"><a href="gy_d.html" class="nav_link nav_gy_d"></a></li>
+				</ul>
+			</div>
+		</div>
+		<!---------- botpart end ---------->
+<!--		<div class="stamp">
+			<img class="longstamp" src="images/longstamp.png">
+		</div>
+-->	</div>
+	<div id="page5" class="page slide"></div>
+</div>
+</body>
+</html>

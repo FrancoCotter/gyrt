@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<title>国韵如天四大产品系列品鉴——百年木作技艺，传承国韵如天</title>
+<link href="css/lib_m.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+  function setSB(v, el) {
+    var ie5 = (document.all  &&  document.getElementsByTagName);
+    if (ie5 || document.readyState == "complete")     {
+      filterEl = el.children[0];
+      valueEl = el.children[1];
+      filterEl.style.width = v + "%";
+      valueEl.innerText = v + "%";
+    }
+  }
+  function fakeProgress(v, el) {
+    if (v > 100)
+      location.href = "index.html";
+    else     {
+      setSB(v, el);
+      window.setTimeout("fakeProgress(" + (++v) + ", document.all['" + el.id + "'])", 20);
+    }
+  } 
+</script> 
+</head>  
+
+<body onLoad="fakeProgress(0, sb)">
+
+<div class="loading_bg">
+    <div class="loading">
+    	<div class="loading_gif"><img src="images/loading/loading.gif"></div>
+		<div class="loading_num" id=sb>
+			<div></div>
+			<div></div>
+		</div>
+    </div>
+</div>
+
+</body>
+</html>
